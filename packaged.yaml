@@ -9,7 +9,7 @@ Parameters:
     Type: String
     Description: (Required) A validated SES email address for receiving new submissions.
     MaxLength: 70
-    Default: validated@email.com
+    Default: hello@rakesh.au
     MinLength: 4
     ConstraintDescription: Required. Must be a SES verified email address.
 Globals:
@@ -20,7 +20,7 @@ Globals:
     Cors:
       AllowMethods: '''OPTIONS,POST'''
       AllowHeaders: '''Content-Type'''
-      AllowOrigin: '''*'''
+      AllowOrigin: '''rakesh.au'''
 Resources:
   FormDataTable:
     Type: AWS::DynamoDB::Table
